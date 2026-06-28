@@ -1,0 +1,64 @@
+.new-arrivals-hero {
+  padding: 60px 20px 45px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.new-arrivals-subtitle {
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 18px;
+}
+
+.new-arrivals-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: #111;
+}
+
+.new-arrivals-description {
+  max-width: 560px;
+  margin: 24px auto 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.new-arrivals-intro {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.new-arrivals-intro h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #111;
+}
+
+.new-arrivals-products {
+  margin-top: 50px;
+  padding: 20px 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 992px) {
+  .new-arrivals-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .new-arrivals-products {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 16px 60px;
+    gap: 16px;
+  }
+}

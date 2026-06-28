@@ -1,0 +1,69 @@
+.trending-carousel {
+  padding: 50px 0 70px;
+  background-color: #f8f8f8;
+}
+
+.trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  margin-bottom: 40px;
+  max-width: 1500px;
+  margin: 0 auto 40px;
+}
+
+.trending-title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.trending-link {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.trending-link:hover {
+  color: #111;
+}
+
+.trending-items {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 0 60px 20px;
+  scroll-behavior: smooth;
+}
+
+.trending-items::-webkit-scrollbar {
+  display: none;
+}
+
+.trending-items .product-card {
+  min-width: 280px;
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .trending-header {
+    padding: 0 20px;
+  }
+
+  .trending-items {
+    padding: 0 20px 20px;
+  }
+
+  .trending-items .product-card {
+    min-width: 240px;
+  }
+}

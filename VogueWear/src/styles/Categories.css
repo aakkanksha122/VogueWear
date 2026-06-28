@@ -1,0 +1,159 @@
+.categories-page {
+  background-color: #f8f8f8;
+}
+
+.categories-header {
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+.categories-subtitle {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #8d8d8d;
+  margin-bottom: 18px;
+}
+
+.categories-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: #111;
+  margin-bottom: 22px;
+}
+
+.categories-description {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.category-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 90px 8%;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.category-content {
+  flex: 1;
+}
+
+.category-content span {
+  font-size: 13px;
+  color: #999;
+  letter-spacing: 3px;
+}
+
+.category-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: 600;
+  color: #111;
+  margin: 20px 0;
+}
+
+.category-content p {
+  max-width: 430px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.category-content button {
+  padding: 14px 28px;
+  border: 1px solid #111;
+  background-color: transparent;
+  color: #111;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-content button:hover {
+  background-color: #111;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.category-image {
+  flex: 1;
+  overflow: hidden;
+}
+.category-image a,
+.category-content a {
+  text-decoration: none;
+}
+.category-image img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.category-image:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .category-section,
+  .reverse {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .category-content {
+    text-align: center;
+  }
+
+  .category-content h2 {
+    font-size: 52px;
+  }
+
+  .category-image img {
+    height: 520px;
+  }
+}
+
+@media (max-width: 576px) {
+  .categories-header {
+    padding: 70px 20px 60px;
+  }
+
+  .categories-header h1 {
+    font-size: 46px;
+  }
+
+  .categories-description {
+    font-size: 15px;
+  }
+
+  .category-section {
+    padding: 60px 20px;
+  }
+
+  .category-content h2 {
+    font-size: 40px;
+  }
+
+  .category-content p {
+    font-size: 15px;
+  }
+
+  .category-image img {
+    height: 380px;
+  }
+}

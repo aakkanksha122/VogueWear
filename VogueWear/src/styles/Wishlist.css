@@ -1,0 +1,150 @@
+/* Wishlist Page */
+
+.wishlist-items {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.wishlist-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.wishlist-items h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+.wishlist-items h1 span {
+  font-size: 28px;
+  color: #888;
+  font-weight: 400;
+}
+
+.wishlist-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #777;
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+/* Wishlist List */
+
+.wishlist-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Wishlist Card */
+
+.wishlist-item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  transition: all 0.3s ease;
+}
+
+.wishlist-item:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Image */
+
+.wishlist-item-image img {
+  width: 120px;
+  height: 160px;
+  object-fit: contain;
+  background-color: #f8f8f8;
+  padding: 10px;
+  transition: transform 0.4s ease;
+}
+
+.wishlist-item:hover .wishlist-item-image img {
+  transform: scale(1.03);
+}
+
+/* Details */
+
+.wishlist-item-details {
+  flex: 1;
+}
+
+.wishlist-item-details h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.wishlist-item-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+}
+
+.wishlist-item-actions {
+  margin-left: auto;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+  align-items: flex-end;
+}
+
+/* Add To Cart */
+
+.wishlist-add-cart-btn {
+  min-width: 180px;
+  padding: 14px 24px;
+
+  border: none;
+  background-color: #111;
+  color: #fff;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wishlist-add-cart-btn:hover {
+  background-color: #333;
+}
+
+/* Remove */
+
+.wishlist-remove-btn {
+  border: none;
+  background: transparent;
+
+  color: #888;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.wishlist-remove-btn:hover {
+  color: #111;
+}

@@ -1,0 +1,126 @@
+.sale-hero {
+  padding: 48px 20px 38px;
+  text-align: center;
+  background: linear-gradient(to bottom, #ece6df, #f7f4f1);
+}
+
+.sale-subtitle {
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #8b2e2e;
+  margin-bottom: 18px;
+}
+
+.sale-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: #111;
+  line-height: 0.95;
+}
+
+.sale-description {
+  max-width: 560px;
+  margin: 24px auto 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+.sale-banner {
+  padding: 50px 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+.sale-banner-content p {
+  color: #b38b59;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+
+.sale-banner-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.sale-banner-content span {
+  color: #ccc;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.sale-intro {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  border-top: 1px solid #ece7e1;
+  background-color: #faf8f6;
+}
+
+.sale-intro h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #111;
+}
+
+.sale-products {
+  margin-top: 30px;
+  padding: 20px 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .sale-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sale-hero {
+    padding: 50px 20px 40px;
+  }
+
+  .sale-hero h1 {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+
+  .sale-description {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .sale-intro h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sale-products {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 16px 60px;
+    gap: 16px;
+  }
+
+  .sale-hero h1 {
+    font-size: 42px;
+  }
+
+  .sale-subtitle {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .sale-description {
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,184 @@
+.account-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 380px;
+  height: 100vh;
+
+  background: #fff;
+
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.account-drawer::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 1px;
+  height: 100%;
+
+  background: #f1f1f1;
+}
+
+.account-drawer {
+  animation: slideDrawer 0.3s ease forwards;
+}
+
+@keyframes slideDrawer {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Header */
+
+.account-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 28px 32px;
+
+  border-bottom: 1px solid #efefef;
+}
+
+.account-drawer-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 600;
+
+  margin: 0;
+}
+
+.account-close-btn {
+  border: none;
+  background: none;
+
+  cursor: pointer;
+
+  font-size: 20px;
+  color: #666;
+}
+
+.account-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 24px 32px;
+  border-bottom: 1px solid #efefef;
+}
+
+.account-avatar {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+  border: 1px solid #ddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  color: #666;
+}
+
+.account-user h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.account-user p {
+  margin-top: 4px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Content */
+
+.account-drawer-content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 32px;
+}
+
+.account-menu-item {
+  border: none;
+  background: none;
+
+  text-align: left;
+
+  padding: 18px 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+
+  color: #333;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid #f3f3f3;
+
+  transition: all 0.3s ease;
+}
+
+.account-menu-item:hover {
+  color: #000;
+  padding-left: 8px;
+}
+
+.account-menu-item.active {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Footer */
+
+.account-drawer-footer {
+  margin-top: auto;
+
+  padding: 32px;
+
+  border-top: 1px solid #efefef;
+}
+
+.account-auth-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  background: #111;
+  color: #fff;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.account-auth-btn:hover {
+  background: #333;
+}
